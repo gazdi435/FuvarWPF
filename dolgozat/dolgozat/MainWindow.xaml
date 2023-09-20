@@ -1,0 +1,30 @@
+﻿<Window x:Class="dolgozat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dolgozat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="3. fealdat" Click="utazasokSzama"/>
+        <Button Content="6. fealdat" Click="megtettUt" Grid.Row="1"/>
+        <Button Content="7. feladat" Click="LeghosszabbFuvar" Grid.Row="1" Grid.Column="1" Width="2cm" Height="1cm" HorizontalAlignment="Left"/>
+        <ListBox x:Name="LBhetes" Grid.Column="1" Grid.Row="1" Width="5cm" HorizontalAlignment="Right"/>
+        <Button Content="8. feladat" Click="Hibak" Grid.Row="1" Grid.Column="2"/>
+        <Button Content="5. feladat" Click="FizetesiModok" Width="2cm" Height="1cm" Grid.Column="2" HorizontalAlignment="Left"/>
+        <ListBox x:Name="LBotos" Grid.Column="2" Width="5cm" HorizontalAlignment="Right"/>
+        <Button Content="4. feladat" Click="Bevetel" Grid.Column="1" Width="2cm" Height="1cm" VerticalAlignment="Top"/>
+        <ComboBox Grid.Column="1" Width="3cm" Height="1cm" x:Name="CBAzonositok"/>
+    </Grid>
+    
+</Window>
